@@ -1,0 +1,236 @@
+#portfolio {
+    padding: 80px 15px;
+}
+
+#portfolio #title h1 {
+    /* color:white; */
+    position: relative;
+    font-weight: 600;
+    font-size: 50px;
+    z-index: 1;
+    line-height: 3rem;
+    margin-bottom: 40px;
+}
+
+#portfolio #title {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#portfolio #title #portfolio-line {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 50px;
+    width: 100px;
+    background: #1C22F5;
+    opacity: .5;
+}
+
+#portfolio #portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-gap: 10px;
+}
+
+#portfolio #portfolio-container .box {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    background: #000;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+#portfolio #portfolio-container .box .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+#portfolio #portfolio-container .box:hover .img .hover-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 53, 53, .8);
+
+}
+
+#portfolio #portfolio-container .box .img .hover-bg {
+    background: rgba(255, 255, 255, 0);
+    transition: all .4s ease-in-out;
+
+}
+
+#portfolio #portfolio-container .box .img .hover-bg .title .text {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: red;
+    transform: translate3d(0, 400px, 0);
+    transition: all .2s ease-in-out;
+    backface-visibility: hidden;
+    opacity: 0;
+}
+
+#portfolio #portfolio-container .box:hover .img .hover-bg .title .text {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: black;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+#portfolio #portfolio-container .box.img-1 {
+    background: url(../afritaste-min.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#portfolio #portfolio-container .box.img-2 {
+    background: url(../subim-min.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+#portfolio #portfolio-container .box.img-3 {
+    background: url('https://cdn.dribbble.com/users/31664/screenshots/5864611/2018.gif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+#portfolio #portfolio-container .box.img-4 {
+    background: url('https://cdn.dribbble.com/users/688456/screenshots/5863808/shot2_2x.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#portfolio #portfolio-container .box.img-5 {
+    background: url('https://cdn.dribbble.com/users/752561/screenshots/5858085/2018_2x.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+#portfolio #portfolio-container .box.img-6 {
+    background: url('https://cdn.dribbble.com/users/1925451/screenshots/5785489/girls_2x.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+#portfolio #portfolio-container .box.img-7 {
+    background: url('https://cdn.dribbble.com/users/1633085/screenshots/5646292/night_time1_2x.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* grid-column:2/3;
+    grid-row:3/4;*/
+}
+
+
+@media only screen and (max-width: 900px) {
+    .wrapper-container {
+        width: 100%;
+    }
+    #portfolio #portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+        grid-gap: 10px;
+    }
+
+    #portfolio #portfolio-container .box.img-1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    #portfolio #portfolio-container .box.img-2 {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    #portfolio #portfolio-container .box.img-3 {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+    #portfolio #portfolio-container .box.img-4 {
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+    #portfolio #portfolio-container .box.img-5 {
+        grid-column: 1/2;
+        grid-row: 5/7;
+    }
+    #portfolio #portfolio-container .box.img-6{
+        grid-column: 2/3;
+        grid-row: 5/7;
+    }
+    #portfolio #portfolio-container .box.img-7{
+        grid-column: 1/3;
+        grid-row: 7/9;
+    }
+}
+
+/* Phone*/
+@media only screen and (max-width:767px) {
+    #portfolio #portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+        grid-gap: 10px;
+    }
+    #portfolio #portfolio-container .box.img-1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    #portfolio #portfolio-container .box.img-2 {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    #portfolio #portfolio-container .box.img-3 {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    #portfolio #portfolio-container .box.img-4 {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    #portfolio #portfolio-container .box.img-5 {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+    #portfolio #portfolio-container .box.img-6{
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+    #portfolio #portfolio-container .box.img-7{
+        grid-column: 1/4;
+        grid-row: 7/8;
+    }
+}

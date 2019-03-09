@@ -1,0 +1,37 @@
+footer{
+    background: #f9fafc;
+    padding:50px 15px;
+    
+}
+footer .social-media-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    text-align: center;
+    max-width:400px; 
+    margin: 0 auto;
+}
+footer .social-media-container a{
+    text-decoration: none;
+    font-size:2rem;
+    color: #8e8f91;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    padding: 10px;
+}
+footer .social-media-container a:hover{
+   color: rgb(255,53,53);
+}
+footer h5{
+    font-size: 1rem;
+    color:black;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+footer h6{
+    font-size: .7rem;
+    color:black;
+    text-transform: capitalize;
+    text-align: center;
+}

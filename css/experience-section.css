@@ -1,0 +1,172 @@
+#experience-section {
+    padding: 80px 15px;
+   background: #000;
+}
+
+#exprience-section .large-title {
+    color: blue;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: .6;
+}
+
+#exprience-section .experience-contianer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#exprience-section .experience-contianer .large-icons .square {
+    display: inline-block;
+    border: 15px solid blue;
+    padding: 5px;
+    opacity: .8;
+    position: relative;
+    top: -90px;
+}
+
+#exprience-section .experience-contianer .large-icons .square .blue-box {
+    height: 150px;
+    width: 150px;
+    background: blue;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: .8; */
+}
+
+#exprience-section .experience-contianer .large-icons .circle {
+    display: inline-block;
+    border: 15px solid yellowgreen;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+
+#exprience-section .experience-contianer .large-icons .inner-circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    color: yellowgreen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exprience-section .experience-contianer .large-icons .triangle {
+    position: relative;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 150px 230px 150px;
+    border-color: transparent transparent #007bff transparent;
+}
+
+#exprience-section .experience-contianer .large-icons .triangle .inner-triangle {
+    position: absolute;
+    top: 49px;
+    left: -94px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 93.75px 151.75px 93.75px;
+    border-color: transparent transparent white transparent;
+
+
+}
+
+#exprience-section .experience-contianer .large-icons .triangle .inner-triangle .text {
+    position: relative;
+    top: 98px;
+    left: -32px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #007bff;
+
+}
+
+#exprience-section .experience-contianer .info {
+    padding: 50px 0;
+}
+
+#exprience-section .experience-contianer .info .info-box {
+    padding: 15px;
+}
+
+#exprience-section .experience-contianer .info .info-box h4 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#exprience-section .experience-contianer .info .info-box .date {
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #52b2b4;
+}
+
+#exprience-section .experience-contianer .info .info-box p {
+    color: #b2b2b2;
+    font-size: .9rem;
+    font-weight:300;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    display: block;
+    line-height: 1rem;
+    
+}
+
+@media only screen and (max-width: 900px){
+    .wrapper-container{width:100%;}
+    #exprience-section .large-title {
+        font-weight: 600;
+        font-size: 3rem;
+        
+    }
+    #exprience-section .experience-contianer .large-icons{
+        position: relative;
+        top:-40px;
+    }
+    #exprience-section .experience-contianer .large-icons .square {
+        display: inline-block;
+        border: 15px solid blue;
+        padding: 5px;
+        position: relative;
+        top: 100px;
+        left: 50px;
+        z-index: 1;
+    }
+}
+
+/* Phone*/
+@media only screen and (max-width:767px){
+    #exprience-section .experience-contianer .large-icons{
+       display: none;
+    }
+    #exprience-section .experience-contianer {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    #exprience-section .large-title {
+       
+        font-weight: 600;
+        font-size: 2rem;
+        
+    }
+}
